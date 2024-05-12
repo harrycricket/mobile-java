@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#C4CD65"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#391717"
+            android:textSize="64sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4A6129"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#391717"
+            android:textSize="64sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:weightSum="9"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#AC6EB6"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#391717"
+            android:textSize="64sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#FFEB3B"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#391717"
+            android:textSize="64sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#FF0033"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="#391717"
+            android:textSize="64sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:weightSum="10"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#E9673838"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="#391717"
+            android:textSize="64sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="#A38D8D"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="#391717"
+            android:textSize="64sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0521BF"
+            android:text="NodeJS"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp" />
+    </LinearLayout>
+</LinearLayout>
