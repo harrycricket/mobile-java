@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6E33D8"
+        android:textColor="#FFFFFF"
+        android:text="R2S Academy"
+        android:paddingVertical="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="#CFCFCF"
+        android:hint="Nhập số thứ 1"
+        android:layout_marginHorizontal="8dp"
+        android:textColorHint="#919191"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="#CFCFCF"
+        android:hint="Nhập số thứ 2"
+        android:textColorHint="#919191"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addition"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#6E33D8"
+        android:paddingVertical="10dp"
+        android:text="Cộng"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="200"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <Button
+        android:id="@+id/subtraction"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="#6E33D8"
+        android:paddingVertical="10dp"
+        android:text="Trừ"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addition"
+        app:layout_constraintStart_toEndOf="@+id/addition"
+        app:layout_constraintTop_toTopOf="@+id/addition" />
+
+    <Button
+        android:id="@+id/multiplication"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="#6E33D8"
+        android:paddingVertical="10dp"
+        android:text="Nhân"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/subtraction"
+        app:layout_constraintStart_toEndOf="@+id/subtraction"
+        app:layout_constraintTop_toTopOf="@+id/subtraction"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/division"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#6E33D8"
+        android:paddingVertical="10dp"
+        android:text="Chia"
+        android:textColor="#FFFFFF"
+        android:textFontWeight="200"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/multiplication"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multiplication"
+        app:layout_constraintTop_toTopOf="@+id/multiplication" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Kết quả: "
+        android:textColor="#919191"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addition" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:textSize="24sp"
+        android:textColor="#1AEA23"
+        android:textFontWeight="900"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

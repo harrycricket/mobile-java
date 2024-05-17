@@ -17,6 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa11cd12-8e89-4c6b-8750-ab88a63ed3dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Facebook/.idea/.gitignore" beforeDir="false" />
@@ -269,6 +270,9 @@
   "associatedIndex": 4
 }]]></component>
   <component name="ProjectId" id="2gRLQwdjbCioOrJBuzjFGjBEThV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
