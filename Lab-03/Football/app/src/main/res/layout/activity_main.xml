@@ -4,28 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="20dp"
-        android:paddingLeft="16dp"
-        android:text="Fruit List"
+        android:paddingVertical="12dp"
+        android:paddingLeft="12dp"
         android:textStyle="bold"
-        android:textSize="24dp"
-        android:background="#7C4DD1"
-        android:textColor="#fff"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:background="#000000"
+        android:textColor="#41D147"
+        android:text="Football Legends"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/listFruit"
+        android:id="@+id/playerList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="52dp"
+        android:background="#E8E8E8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
