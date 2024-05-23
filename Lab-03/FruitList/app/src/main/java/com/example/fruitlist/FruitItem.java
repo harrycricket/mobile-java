@@ -1,19 +1,37 @@
 package com.example.fruitlist;
 
-import android.os.Bundle;
+public class FruitItem {
+    private String name;
+    private String description;
+    private String fruitUrl;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+    public FruitItem(String name, String description, String fruitUrl) {
+        this.name = name;
+        this.description = description;
+        this.fruitUrl = fruitUrl;
+    }
 
-public class FruitItem extends AppCompatActivity {
+    public String getName() {
+        return name;
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_fruit_item);
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getFruitUrl() {
+        return fruitUrl;
+    }
+
+    public void setFruitUrl(String fruitUrl) {
+        this.fruitUrl = fruitUrl;
     }
 }

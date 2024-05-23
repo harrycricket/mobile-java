@@ -8,23 +8,23 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Player {
-    private int avatarUrl;
+    private String avatarUrl;
     private String name;
     private String description;
-    private int flagUrl;
+    private String flagUrl;
 
-    public Player(int avatarUrl, String name, String description, int flagUrl) {
+    public Player(String avatarUrl, String name, String description, String flagUrl) {
         this.avatarUrl = avatarUrl;
         this.name = name;
         this.description = description;
         this.flagUrl = flagUrl;
     }
 
-    public int getAvatarUrl() {
+    public String getAvatarUrl() {
         return avatarUrl;
     }
 
-    public void setAvatarUrl(int avatarUrl) {
+    public void setAvatarUrl(String avatarUrl) {
         this.avatarUrl = avatarUrl;
     }
 
@@ -44,11 +44,11 @@ public class Player {
         this.description = description;
     }
 
-    public int getFlagUrl() {
+    public String getFlagUrl() {
         return flagUrl;
     }
 
-    public void setFlagUrl(int flagUrl) {
+    public void setFlagUrl(String flagUrl) {
         this.flagUrl = flagUrl;
     }
 }
