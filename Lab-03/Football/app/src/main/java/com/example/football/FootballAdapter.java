@@ -8,17 +8,20 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
 import java.util.List;
 
 public class FootballAdapter extends BaseAdapter {
     private Context context;
+    private int layout;
     private List<Player> playerList;
-    LayoutInflater inflater;
 
-    public FootballAdapter(Context context, List<Player> playerList) {
+    public FootballAdapter(Context context, int layout, List<Player> playerList) {
         this.context = context;
+        this.layout = layout;
         this.playerList = playerList;
-        inflater = LayoutInflater.from(context);
     }
 
     @Override
@@ -28,17 +31,21 @@ public class FootballAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return playerList.get(position);
     }
 
     @Override
     public long getItemId(int position) {
-        return 0;
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = inflater.inflate(R.layout.player, null);
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        if (convertView == null) {
+            convertView = inflater.inflate(layout, null);
+        }
+
         TextView name = convertView.findViewById(R.id.name);
         TextView description = convertView.findViewById(R.id.description);
         ImageView avatar = convertView.findViewById(R.id.avatar);
@@ -47,8 +54,14 @@ public class FootballAdapter extends BaseAdapter {
         Player player = playerList.get(position);
         name.setText(player.getName());
         description.setText(player.getDescription());
-        avatar.setImageResource(player.getAvatarUrl());
-        flag.setImageResource(player.getFlagUrl());
+        Glide.with(context)
+                .load(player.getAvatarUrl())
+                .apply(new RequestOptions().error(R.drawable.no_avatar))
+                .into(avatar);
+        Glide.with(context)
+                .load(player.getFlagUrl())
+                .apply(new RequestOptions().error(R.drawable.no_avatar))
+                .into(flag);
         return convertView;
     }
 }
