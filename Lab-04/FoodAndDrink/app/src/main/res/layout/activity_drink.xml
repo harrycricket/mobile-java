@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:text="Chọn đồ uống"
+        android:background="#A6A5A5"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:gravity="center"/>
+    <ListView
+        android:id="@+id/lvDrinks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#E2E2E7"/>
+    <Button
+        android:id="@+id/btnSelectDone"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_marginHorizontal="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#3AEA42"
+        android:textColor="#000"
+        android:paddingVertical="12dp"
+        android:text="Hoàn tất"/>
+</LinearLayout>
