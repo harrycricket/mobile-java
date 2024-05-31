@@ -48,7 +48,7 @@ public class DrinkActivity extends AppCompatActivity {
                 txtLabel.setBackgroundColor(Color.parseColor("#4ade80"));
                 Toast.makeText(this, "Đã thêm " + item.getName() + " vào danh sách!", Toast.LENGTH_SHORT).show();
             } else {
-                Data.getInstance().getSelectedDrinks().remove(item);
+                Data.getInstance().removeItem(item);
                 view.setBackgroundColor(Color.parseColor("#f1f5f9"));
                 txtLabel.setText("Chưa chọn");
                 txtLabel.setBackgroundColor(Color.parseColor("#94a3b8"));
