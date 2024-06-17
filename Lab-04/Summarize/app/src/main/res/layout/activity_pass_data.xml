@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="#00BCD4"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="8dp"
+        android:textSize="32sp"
+        android:text="Pass data to another screen"/>
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="#F3A19B">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="Pass string 'Harry is coming' to the String Activity"/>
+        <Button
+            android:id="@+id/btnString"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#08E611"
+            android:textColor="#000"
+            android:paddingHorizontal="64dp"
+            android:textSize="20sp"
+            android:text="Pass"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:background="#F3A19B">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="Pass number '3006' to the Number Activity"/>
+        <Button
+            android:id="@+id/btnNumber"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#08E611"
+            android:textColor="#000"
+            android:paddingHorizontal="64dp"
+            android:textSize="20sp"
+            android:text="Pass"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:background="#F3A19B">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="Pass array \n ['NextJS', 'NodeJS', 'ReactJS', 'Tailwind', 'React Native'] to the Array Activity"/>
+        <Button
+            android:id="@+id/btnArray"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#08E611"
+            android:textColor="#000"
+            android:paddingHorizontal="64dp"
+            android:textSize="20sp"
+            android:text="Pass"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:background="#F3A19B">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="Pass dog object \n {name: Buck, color: Yellow, age: 3 }  to the Object Activity"/>
+        <Button
+            android:id="@+id/btnObject"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#08E611"
+            android:textColor="#000"
+            android:paddingHorizontal="64dp"
+            android:textSize="20sp"
+            android:text="Pass"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBundle"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#08E611"
+        android:textColor="#000"
+        android:paddingVertical="16dp"
+        android:textSize="20sp"
+        android:text="Pass all value using bundle"/>
+</LinearLayout>
