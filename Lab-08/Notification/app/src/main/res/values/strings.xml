@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notification</string>
+    <string name="channel_name_default">Default Channel</string>
+    <string name="channel_description_default">This is the default notification channel</string>
+    <string name="channel_name_custom">Custom Channel</string>
+    <string name="channel_description_custom">This is the custom notification channel</string>
+</resources>
