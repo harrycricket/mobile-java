@@ -1,0 +1,58 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    app:layout_constraintCircleRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1">
+            <TextView
+
+                android:id="@+id/txtFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="top"
+                android:textColor="#605959" />
+            <TextView
+                android:id="@+id/txtLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Name"
+                android:textSize="20sp"
+                android:layout_gravity="top"
+                android:textColor="#605959"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/edit"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/divider" />
+</LinearLayout>
