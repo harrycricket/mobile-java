@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MainActivity"
+        android:textSize="20sp"
+        android:background="#9C27B0"
+        android:textColor="#fff"
+        android:padding="16dp"/>
+    <TextView
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt thức ăn và đồ uống"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/btnSelectFood"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#DFDFDF"
+            android:textColor="#000"
+            android:text="CHỌN THỨC ĂN"
+            android:layout_marginVertical="12dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            />
+        <Button
+            android:id="@+id/btnSelectDrink"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="#DFDFDF"
+            android:textColor="#000"
+            android:text="CHỌN ĐỒ UỐNG"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            />
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="120dp"
+            android:layout_marginVertical="12dp"
+            android:backgroundTint="#DFDFDF"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:text="XÓA HẾT"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingBottom="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Danh sách đã chọn"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/txtInform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Chưa có thức ăn/ đồ uống nào được chọn"
+            android:textStyle="italic"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"/>
+        <ListView
+            android:id="@+id/lvSelectedItems"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/txtSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng: 0đ"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:background="#FFF300"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24sp"/>
+    </LinearLayout>
+</LinearLayout>
