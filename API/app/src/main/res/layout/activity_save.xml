@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/inputArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#673AB7"
+            android:padding="16dp"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:text="Add A Trainee" />
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:hint="Name"
+            android:layout_marginHorizontal="12dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:layout_marginTop="24dp"
+            android:paddingStart="16dp"
+            android:paddingTop="14dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="14dp"
+            android:textColorHint="#999999"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColorHint="#999999"
+            android:background="@drawable/rounded_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:layout_marginTop="12dp"
+            android:paddingBottom="14dp"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColorHint="#999999"
+            android:background="@drawable/rounded_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:layout_marginTop="12dp"
+            android:paddingBottom="14dp"
+            android:imeOptions="actionDone"
+            android:inputType="text" />
+        <EditText
+            android:id="@+id/etGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:layout_marginHorizontal="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColorHint="#999999"
+            android:background="@drawable/rounded_border"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="14dp"
+            android:layout_marginTop="12dp"
+            android:paddingBottom="14dp"
+            android:imeOptions="actionDone"
+            android:inputType="text" />
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputArea"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2AB5B5"
+        android:padding="12dp"
+        android:text="SAVE"
+        android:textColor="#373434"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="4dp" />
+
+</RelativeLayout>
